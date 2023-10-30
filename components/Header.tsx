@@ -10,8 +10,8 @@ export default function Header() {
         <div>
         <div className="hero">
         <div className="herotxt">
-            <h1>DOWNLOAD APP, SAVE MONEY, MAKE FRIENDS!</h1>
-            <p>Its simple and its free. Play your part in reducing Carbon Footprint and help Mother Nature to sustain its beauty. So what are you waiting for ?  
+            <h1>DOWNLOAD APP,<br /> SAVE MONEY,<br></br> MAKE FRIENDS!</h1>
+            <p>Its simple and its free. Play your part in reducing<br /> Carbon Footprint and help Mother Nature to <br /> sustain its beauty. So what are you waiting for ? <br /> 
              Lets ride together</p>
              <button className="playstore"><img src={playstore}  />DOWNLOAD</button>
              <button className="appstore"><img src={appstore} />DOWNLOAD</button>
@@ -23,6 +23,12 @@ export default function Header() {
        <Location />
        <img src={car} className="car" />
         </div>
+        </div>
+        <div className="headerv">
+            <p>Let’s go. Get a link <br />
+                to download the app.</p>
+                    <input type="text" placeholder="Enter mobile phone number" />
+                    <button>APPLY T0 DRIVE</button>
         </div>
         </div>
     )
