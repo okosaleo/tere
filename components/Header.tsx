@@ -4,6 +4,7 @@ import Locl from "./Locl"
 import car from "../src/assets/car.svg"
 import playstore from "../src/assets/playsor.svg"
 import appstore from "../src/assets/appstore.svg"
+import { motion } from "framer-motion"
 
 export default function Header() {
     return (
@@ -21,7 +22,15 @@ export default function Header() {
        <Map />
        <Locl />
        <Location />
-       <img src={car} className="car" />
+       <motion.img
+       initial={{
+        opacity : 0,
+        x : -80 }}
+       whileInView={{ 
+        opacity : 1,
+        x : 1 }}
+       transition={{duration : 0.7}}
+        src={car} className="car" />
         </div>
         </div>
         <div className="headerv">
